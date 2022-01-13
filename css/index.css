@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.main{
+    width: 425px;
+}
+
+.main__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__button__one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100px;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    font-size: 14px;
+}
+
+.main__button .main__button__one:not(:last-child){
+    margin-right: 10px;
+}
+
+.main__button__one a{
+    color: #000000;
+}
+
+.main__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.main__box__videos{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 14px;
+    flex-basis: 90%;
+    width: auto;
+    height: auto;
+    color: #000000;
+}
+
+.main__box__videos video{
+    width: 352px;
+    height: 198px;
+}
+
+.main__box__img{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 14px;
+    flex-basis: 90%;
+    width: auto;
+    height: auto;
+    color: #000000;
+}
+
+.main__box__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.main__box__img > span{
+    text-align: center;
+}
+
+.main__box > *:not(:last-child){
+    margin-bottom: 20px;
+}
+
+
+@media only screen and (max-width: 376px){
+    .main{
+        width: 100%;
+    }
+    
+    .main__button__one > a{
+        font-size: 13px;
+    }
+
+    .main__box > a > div{
+        font-size: 13px;
+    }
+
+    .main__box__videos video{
+        width: 320px;
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 321px){
+    .main{
+        width: 100%;
+    }
+
+    .main__button__one{
+        flex-basis: 86px;
+    }
+
+    .main__button__one > a{
+        font-size: 11px;
+    }
+
+    .main__box > a > div{
+        font-size: 12px;
+    }
+
+    .main__box__videos video{
+        width: 304px;
+        height: 171px;
+    }
+
+}
